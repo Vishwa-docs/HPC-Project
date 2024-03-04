@@ -1,9 +1,12 @@
 # HPC Project
 
+[Tutorial I Followed](https://youtube.com/playlist?list=PLUTbi0GOQwghR9db9p6yHqwvzc989q_mu&si=jD8vXRX3Q709iE84)
+
 # To Do
-1. We both will research which optimization algorithm we can use for batch filtering parallelizatiob and decide by Thursday.
+- [ ] How to run OpenCV and MPI in the same CLI
+- [ ] Which algorithm is best for batch filtering
+- [ ] Optimization and Batch filtering
+- [ ] Do Benchmarking
 
-2. We’ll also start coding the basic part such as loading the image dataset and applying a filter with OpenCL. Both will try this and keep updating the notion page.
-
-3. Then we’ll try figuring out how to code the optimization part with the parallelisation thing in C and integrate it.
-
+# Other Links
+[OpenCV Documentation](https://docs.opencv.org/4.x/d0/d3d/tutorial_general_install.html)

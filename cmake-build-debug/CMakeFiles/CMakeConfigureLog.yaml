@@ -380,3 +380,993 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-KPdC6r"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-KPdC6r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-KPdC6r'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_26f6c
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_26f6c.dir/test_mpi.c.o -MF CMakeFiles/cmTC_26f6c.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_26f6c.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-KPdC6r/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_26f6c.dir/test_mpi.c.o -o cmTC_26f6c  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qDwAx5"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qDwAx5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qDwAx5'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_9a0e6
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_9a0e6.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_9a0e6.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_9a0e6.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qDwAx5/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_9a0e6.dir/test_mpi.cpp.o -o cmTC_9a0e6  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jaMzk4"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jaMzk4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jaMzk4'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_1b58b
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_1b58b.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_1b58b.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_1b58b.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jaMzk4/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_1b58b.dir/test_mpi.cpp.o -o cmTC_1b58b  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RIOqzH"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RIOqzH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RIOqzH'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_a1b3a
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_a1b3a.dir/test_mpi.c.o -MF CMakeFiles/cmTC_a1b3a.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_a1b3a.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RIOqzH/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_a1b3a.dir/test_mpi.c.o -o cmTC_a1b3a  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yRPG2W"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yRPG2W"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yRPG2W'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_cff72
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_cff72.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_cff72.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_cff72.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yRPG2W/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_cff72.dir/test_mpi.cpp.o -o cmTC_cff72  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RhgSGZ"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RhgSGZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RhgSGZ'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_e8824
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_e8824.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_e8824.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_e8824.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-RhgSGZ/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_e8824.dir/test_mpi.cpp.o -o cmTC_e8824  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gj8uZe"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gj8uZe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gj8uZe'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_d7f02
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -MD -MT CMakeFiles/cmTC_d7f02.dir/test_mpi.c.o -MF CMakeFiles/cmTC_d7f02.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_d7f02.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-gj8uZe/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_d7f02.dir/test_mpi.c.o -o cmTC_d7f02  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-BfxAa2"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-BfxAa2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-BfxAa2'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_d6b59
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -MD -MT CMakeFiles/cmTC_d6b59.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_d6b59.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_d6b59.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-BfxAa2/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_d6b59.dir/test_mpi.cpp.o -o cmTC_d6b59  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JWKN9j"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JWKN9j"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JWKN9j'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_24f06
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -MD -MT CMakeFiles/cmTC_24f06.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_24f06.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_24f06.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-JWKN9j/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_24f06.dir/test_mpi.cpp.o -o cmTC_24f06  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ONWEk9"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ONWEk9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ONWEk9'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_136f2
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_136f2.dir/test_mpi.c.o -MF CMakeFiles/cmTC_136f2.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_136f2.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ONWEk9/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_136f2.dir/test_mpi.c.o -o cmTC_136f2  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Gy3Vnv"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Gy3Vnv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Gy3Vnv'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_4bf5c
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_4bf5c.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_4bf5c.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_4bf5c.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Gy3Vnv/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_4bf5c.dir/test_mpi.cpp.o -o cmTC_4bf5c  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sifRl4"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sifRl4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sifRl4'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_6de66
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_6de66.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_6de66.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_6de66.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sifRl4/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_6de66.dir/test_mpi.cpp.o -o cmTC_6de66  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IzDJ1v"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IzDJ1v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IzDJ1v'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_462cc
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_462cc.dir/test_mpi.c.o -MF CMakeFiles/cmTC_462cc.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_462cc.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-IzDJ1v/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_462cc.dir/test_mpi.c.o -o cmTC_462cc  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h378sg"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h378sg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h378sg'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_727cc
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_727cc.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_727cc.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_727cc.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h378sg/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_727cc.dir/test_mpi.cpp.o -o cmTC_727cc  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DEwv2s"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DEwv2s"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DEwv2s'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_2bfc3
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_2bfc3.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_2bfc3.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_2bfc3.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DEwv2s/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_2bfc3.dir/test_mpi.cpp.o -o cmTC_2bfc3  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EwNNH4"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EwNNH4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EwNNH4'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_79532
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_79532.dir/test_mpi.c.o -MF CMakeFiles/cmTC_79532.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_79532.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-EwNNH4/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_79532.dir/test_mpi.c.o -o cmTC_79532  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L0bVMp"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L0bVMp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L0bVMp'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_fd158
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_fd158.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_fd158.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_fd158.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L0bVMp/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_fd158.dir/test_mpi.cpp.o -o cmTC_fd158  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-T0k4WS"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-T0k4WS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-T0k4WS'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_ecf42
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_ecf42.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_ecf42.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_ecf42.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-T0k4WS/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_ecf42.dir/test_mpi.cpp.o -o cmTC_ecf42  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L6YN4d"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L6YN4d"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L6YN4d'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_ec561
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_ec561.dir/test_mpi.c.o -MF CMakeFiles/cmTC_ec561.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_ec561.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-L6YN4d/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_ec561.dir/test_mpi.c.o -o cmTC_ec561  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h8ydyJ"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h8ydyJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h8ydyJ'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_3602e
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_3602e.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_3602e.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_3602e.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-h8ydyJ/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_3602e.dir/test_mpi.cpp.o -o cmTC_3602e  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sxOSeD"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sxOSeD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sxOSeD'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_70683
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_70683.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_70683.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_70683.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sxOSeD/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_70683.dir/test_mpi.cpp.o -o cmTC_70683  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ARNm6Y"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ARNm6Y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ARNm6Y'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_c1e7d
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c1e7d.dir/test_mpi.c.o -MF CMakeFiles/cmTC_c1e7d.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_c1e7d.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ARNm6Y/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_c1e7d.dir/test_mpi.c.o -o cmTC_c1e7d  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3jJIvm"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3jJIvm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3jJIvm'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_52e0c
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_52e0c.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_52e0c.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_52e0c.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3jJIvm/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_52e0c.dir/test_mpi.cpp.o -o cmTC_52e0c  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jZS4aE"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jZS4aE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jZS4aE'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_5f166
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_5f166.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_5f166.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_5f166.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jZS4aE/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_5f166.dir/test_mpi.cpp.o -o cmTC_5f166  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tsm055"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tsm055"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tsm055'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_d2757
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_d2757.dir/test_mpi.c.o -MF CMakeFiles/cmTC_d2757.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_d2757.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-tsm055/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_d2757.dir/test_mpi.c.o -o cmTC_d2757  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VLreXP"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VLreXP"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VLreXP'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_8a16f
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_8a16f.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_8a16f.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_8a16f.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-VLreXP/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_8a16f.dir/test_mpi.cpp.o -o cmTC_8a16f  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DL1dA9"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DL1dA9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DL1dA9'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_4e727
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_4e727.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_4e727.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_4e727.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-DL1dA9/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_4e727.dir/test_mpi.cpp.o -o cmTC_4e727  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6AFjv"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6AFjv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6AFjv'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_a85b9
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_a85b9.dir/test_mpi.c.o -MF CMakeFiles/cmTC_a85b9.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_a85b9.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b6AFjv/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_a85b9.dir/test_mpi.c.o -o cmTC_a85b9  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pu5ZBJ"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pu5ZBJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pu5ZBJ'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_c3b36
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c3b36.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_c3b36.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_c3b36.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pu5ZBJ/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_c3b36.dir/test_mpi.cpp.o -o cmTC_c3b36  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-32NemA"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-32NemA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-32NemA'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_b5898
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_b5898.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_b5898.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_b5898.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-32NemA/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_b5898.dir/test_mpi.cpp.o -o cmTC_b5898  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rnnzwR"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rnnzwR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rnnzwR'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_bbdc9
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_bbdc9.dir/test_mpi.c.o -MF CMakeFiles/cmTC_bbdc9.dir/test_mpi.c.o.d -o CMakeFiles/cmTC_bbdc9.dir/test_mpi.c.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rnnzwR/test_mpi.c
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_bbdc9.dir/test_mpi.c.o -o cmTC_bbdc9  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5s33iv"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5s33iv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5s33iv'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_bd13b
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_bd13b.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_bd13b.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_bd13b.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5s33iv/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_bd13b.dir/test_mpi.cpp.o -o cmTC_bd13b  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TsYf2l"
+      binary: "/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TsYf2l"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TsYf2l'
+        
+        Run Build Command(s): /Users/daver/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -v cmTC_760da
+        [1/2] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -isystem /opt/homebrew/Cellar/open-mpi/5.0.2/include -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_760da.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_760da.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_760da.dir/test_mpi.cpp.o -c /Users/daver/Desktop/HPC_Project/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TsYf2l/test_mpi.cpp
+        [2/2] : && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=14.1 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_760da.dir/test_mpi.cpp.o -o cmTC_760da  /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib && :
+        
+      exitCode: 0
+...
