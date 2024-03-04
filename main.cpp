@@ -47,7 +47,7 @@ void apply_sobel_filter(const std::string& filename) {
 }
 
 int main() {
-    std::string image_path = "/Users/daver/Desktop/HPC_Project/sheep.jpg";
+    std::string image_path = "/Users/daver/Desktop/HPC_Project/resources/sheep.jpg";
     display_image(image_path);
     apply_sobel_filter(image_path);
 
