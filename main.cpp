@@ -2,54 +2,34 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
+#include <mpi.h>
 
-void display_image(const std::string& filename) {
-    cv::Mat image = cv::imread(filename, cv::IMREAD_COLOR);
+#include <chrono>
+#include <vector>
 
-    if (!image.data) {
-        std::cout << "Error loading image!" << std::endl;
-        return;
-    }
+#include "utils/filter_functions.h"
+#include "utils/display_functions.h"
 
-    cv::namedWindow("Image", cv::WINDOW_NORMAL);
-    cv::imshow("Image", image);
-
-    cv::waitKey(0);
-
-    cv::destroyWindow("Image");
-}
-
-void apply_sobel_filter(const std::string& filename) {
-    cv::Mat image = cv::imread(filename, cv::IMREAD_GRAYSCALE);
-
-    if (!image.data) {
-        std::cout << "Error loading image!" << std::endl;
-        return;
-    }
-
-    cv::Mat sobel_x, sobel_y;
-    cv::Sobel(image, sobel_x, CV_16S, 1, 0);
-    cv::Sobel(image, sobel_y, CV_16S, 0, 1);
-
-    cv::convertScaleAbs(sobel_x, sobel_x, 1, 0); // Convert back to CV_8U for display
-    cv::convertScaleAbs(sobel_y, sobel_y, 1, 0);
-
-    cv::Mat sobel_combined;
-    cv::vconcat(image, sobel_x, sobel_combined);
-    cv::vconcat(sobel_combined, sobel_y, sobel_combined);
-
-    cv::namedWindow("Sobel Filter", cv::WINDOW_NORMAL);
-    cv::imshow("Sobel Filter", sobel_combined);
-
-    cv::waitKey(0);
-
-    cv::destroyWindow("Sobel Filter");
-}
 
 int main() {
-    std::string image_path = "/Users/daver/Desktop/HPC_Project/resources/sheep.jpg";
-    display_image(image_path);
-    apply_sobel_filter(image_path);
+//    std::string image_path = "/Users/daver/Desktop/HPC_Project/resources/sheep.jpg";
+//    display_image(image_path);
+//    apply_sobel_filter(image_path);
+
+    std::string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
+
+    // display_images_from_directory(image_directory_path, 10);
+
+    auto start = std::chrono::high_resolution_clock::now();
+
+    display_images_from_directory_with_filter(image_directory_path, 10, apply_sobel_filter);
+
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::duration<double>>(end - start);
+
+    std::cout << "Execution time: " << duration.count() << " seconds" << std::endl;
 
     return 0;
 }
+
+// g++ -o main main.cpp ../utils/filter_functions.cpp -I../utils
