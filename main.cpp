@@ -9,25 +9,27 @@
 
 #include "utils/filter_functions.h"
 #include "utils/display_functions.h"
+#include "utils/serial_codes.h"
 
+using namespace std;
 
 int main() {
-//    std::string image_path = "/Users/daver/Desktop/HPC_Project/resources/sheep.jpg";
+//    string image_path = "/Users/daver/Desktop/HPC_Project/resources/sheep.jpg";
 //    display_image(image_path);
 //    apply_sobel_filter(image_path);
 
-    std::string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
+    string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
 
     // display_images_from_directory(image_directory_path, 10);
 
-    auto start = std::chrono::high_resolution_clock::now();
+    auto start = chrono::high_resolution_clock::now();
 
-    display_images_from_directory_with_filter(image_directory_path, 10, apply_sobel_filter);
+    images_from_directory_with_filter(image_directory_path, 100, apply_sobel_filter_serial);
 
-    auto end = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::duration<double>>(end - start);
+    auto end = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
 
-    std::cout << "Execution time: " << duration.count() << " seconds" << std::endl;
+    cout << "Execution time: " << duration.count() << " seconds" << endl;
 
     return 0;
 }

@@ -10,6 +10,7 @@
 
 void display_image(const std::string& filename);
 void display_images_from_directory(const std::string& directory, int limit);
-void display_images_from_directory_with_filter(const std::string& directory, int limit, void(*filter_function)(const std::string&));
+
+bool isImageExtension(const std::string& filename);
 
 #endif //HPC_PROJECT_DISPLAY_FUNCTIONS_H
