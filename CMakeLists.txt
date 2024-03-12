@@ -8,6 +8,7 @@ find_package(OpenCV REQUIRED)
 
 #include_directories("/opt/homebrew/opt/opencv")
 #link_directories("/opt/homebrew/opt/opencv")
+#
 
 add_executable(HPC_Project main.cpp
         utils/filter_functions.h
