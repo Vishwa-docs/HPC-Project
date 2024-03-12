@@ -9,6 +9,7 @@
 
 #include "utils/filter_functions.h"
 #include "utils/display_functions.h"
+#include "utils/serial_codes.h"
 
 using namespace std;
 
@@ -23,7 +24,7 @@ int main() {
 
     auto start = chrono::high_resolution_clock::now();
 
-    display_images_from_directory_with_filter(image_directory_path, 10, apply_sobel_filter);
+    images_from_directory_with_filter(image_directory_path, 100, apply_sobel_filter_serial);
 
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
