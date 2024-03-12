@@ -19,7 +19,7 @@ using namespace std;
 
 bool isImageExtension(const string& filename) {
     vector<string> extensions = {"jpg", "jpeg", "png", "bmp", "tiff"};
-    string ext = filename.substr(filename.rfind(".") + 1);
+    string ext = filename.substr(filename.rfind('.') + 1);
     transform(ext.begin(), ext.end(), ext.begin(), ::tolower);
     return find(extensions.begin(), extensions.end(), ext) != extensions.end();
 }
