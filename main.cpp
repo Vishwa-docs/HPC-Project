@@ -14,10 +14,10 @@
 
 using namespace std;
 
-void serial_code(const string& image_directory_path){
+void serial_code(const string& image_directory_path, int limit){
     auto start = chrono::high_resolution_clock::now();
 
-    images_from_directory_with_filter(image_directory_path, 100, apply_sobel_filter_serial);
+    images_from_directory_with_filter(image_directory_path, limit, apply_sobel_filter_serial);
 
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
@@ -34,9 +34,16 @@ int main() {
 
 //    display_images_from_directory(image_directory_path, 10);
 
-//    serial_code(image_directory_path);
+    serial_code(image_directory_path, 7200);
 
-    images_from_directory_with_filter_mpi(image_directory_path, 100, apply_sobel_filter_serial);;
+    auto start = chrono::high_resolution_clock::now();
+
+    images_from_directory_with_filter_mpi(image_directory_path, 7200, apply_sobel_filter_serial);
+
+    auto end = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
+
+    cout << "Execution time parallel: " << duration.count() << " seconds" << endl;
 
     return 0;
 }
