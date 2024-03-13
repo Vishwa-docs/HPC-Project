@@ -34,11 +34,5 @@
 # Mac Files
 *.DS_Store
 
-<<<<<<< HEAD
-
 # Other Files
 resources/
-=======
-# Image repo
-resources/image_dataset/
->>>>>>> main
