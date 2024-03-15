@@ -37,46 +37,60 @@ double parallel_dependent_code(const string& image_directory_path, int limit, vo
     return duration.count();
 }
 
-//double parallel_independent_code(const string& image_directory_path, int limit, void(*filter_function)(const std::string&)){
-//    auto start = chrono::high_resolution_clock::now();
-//
-//    images_from_directory_with_filter_independent_mpi(image_directory_path, limit, filter_function);;
-//
-//    auto end = chrono::high_resolution_clock::now();
-//    auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
-//
-//    return duration.count();
-//}
+double parallel_independent_code(const string& image_directory_path, int limit, void(*filter_function)(const std::string&)){
+    auto start = chrono::high_resolution_clock::now();
 
+    images_from_directory_with_filter_independent_mpi(image_directory_path, limit, filter_function);;
 
-int main() {
-    double serial_dependent, serial_independent, parallel_dependent, parallel_independent;
+    auto end = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
 
+    return duration.count();
+}
+
+void run_single_tests(){
     string image_path = "/Users/daver/Desktop/HPC_Project/resources/sheep.jpg";
-//    display_image(image_path);
-//    apply_sobel_filter(image_path);
-
     string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
 
-//    display_images_from_directory(image_directory_path, 10);
+
+    display_image(image_path);
+    apply_sobel_filter(image_path);
+
+    display_images_from_directory(image_directory_path, 10);
+
+
+    // Independent Filters Test
+    apply_averaging_filter_no_window(image_path);
+}
+
+void run_dependent_filters(){
+    string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
+
+    double serial_dependent, parallel_dependent;
 
     serial_dependent = serial_code(image_directory_path, 10, apply_sobel_filter_no_window);
     parallel_dependent = parallel_dependent_code(image_directory_path, 10, apply_sobel_filter_no_window);
 
     cout << "Execution time for Serial Dependent Filter: " << serial_dependent << " seconds" << endl;
-    cout << "Execution time for Serial Independent Filter: " << parallel_dependent << " seconds" << endl;
+    cout << "Execution time for Parallel Independent Filter: " << parallel_dependent << " seconds" << endl;
+}
 
-    serial_independent = serial_code(image_directory_path, 10, apply_averaging_filter_no_window);
-//    parallel_independent = parallel_independent_code(image_directory_path, 10, reinterpret_cast<void (*)(
-//            const string &)>(apply_averaging_filter_with_range_no_window));
+void run_independent_filters(){
+    string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
+
+    double serial_independent, parallel_independent;
+
+    serial_independent = serial_code(image_directory_path, 40000, apply_averaging_filter_no_window);
+    parallel_independent = parallel_independent_code(image_directory_path, 40000, reinterpret_cast<void (*)(
+            const string &)>(apply_averaging_filter_with_range_no_window));
 
     cout << "Execution time for Serial Independent Filter: " << serial_independent << " seconds" << endl;
-//    cout << "Execution time for Parallel Independent Filter: " << parallel_independent << " seconds" << endl;
+    cout << "Execution time for Parallel Independent Filter: " << parallel_independent << " seconds" << endl;
+}
 
+int main() {
 
-    ////////////////////////////
-    // Independent Filters Test
-//    apply_averaging_filter_no_window(image_path);
+    run_independent_filters();
 
     return 0;
 }
