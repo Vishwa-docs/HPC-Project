@@ -17,7 +17,9 @@ add_executable(HPC_Project main.cpp
         utils/serial_codes.h
         utils/serial_codes.cpp
         utils/parallel_dependent_codes.h
-        utils/parallel_dependent_codes.cpp)
+        utils/parallel_dependent_codes.cpp
+        utils/parallel_independent_codes.h
+        utils/parallel_independent_codes.cpp)
 
 target_link_libraries(HPC_Project PRIVATE MPI::MPI_CXX ${OpenCV_LIBS})
 #OpenCV::core OpenCV::imgproc OpenCV::highgui

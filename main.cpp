@@ -17,7 +17,7 @@ using namespace std;
 void serial_code(const string& image_directory_path, int limit){
     auto start = chrono::high_resolution_clock::now();
 
-    images_from_directory_with_filter(image_directory_path, limit, apply_sobel_filter_serial);
+    images_from_directory_with_filter(image_directory_path, limit, apply_sobel_filter_no_window);
 
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
@@ -25,10 +25,10 @@ void serial_code(const string& image_directory_path, int limit){
     cout << "Execution time: " << duration.count() << " seconds" << endl;
 }
 
-void parallel_code(const string& image_directory_path, int limit){
+void parallel_dependent_code(const string& image_directory_path, int limit){
     auto start = chrono::high_resolution_clock::now();
 
-    images_from_directory_with_filter_mpi(image_directory_path, 40000, apply_sobel_filter_serial);;
+    images_from_directory_with_filter_dependent_mpi(image_directory_path, limit, apply_sobel_filter_no_window);;
 
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
@@ -38,7 +38,7 @@ void parallel_code(const string& image_directory_path, int limit){
 
 
 int main() {
-//    string image_path = "/Users/daver/Desktop/HPC_Project/resources/sheep.jpg";
+    string image_path = "/Users/daver/Desktop/HPC_Project/resources/sheep.jpg";
 //    display_image(image_path);
 //    apply_sobel_filter(image_path);
 
@@ -46,8 +46,12 @@ int main() {
 
 //    display_images_from_directory(image_directory_path, 10);
 
-    serial_code(image_directory_path, 40000);
-    parallel_code(image_directory_path, 40000);
+    serial_code(image_directory_path, 10);
+    parallel_dependent_code(image_directory_path, 10);
+
+    ////////////////////////////
+    // Independent Filters Test
+    apply_averaging_filter_no_window(image_path);
 
     return 0;
 }

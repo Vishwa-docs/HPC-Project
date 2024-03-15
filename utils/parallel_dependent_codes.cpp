@@ -26,7 +26,7 @@ using namespace std;
 #include <string>
 #include <opencv2/opencv.hpp>
 
-void images_from_directory_with_filter_mpi(const std::string& directory, int limit, void(*filter_function)(const std::string&)) {
+void images_from_directory_with_filter_dependent_mpi(const std::string& directory, int limit, void(*filter_function)(const std::string&)) {
     int comm_size, rank;
     MPI_Init(nullptr, nullptr);
     MPI_Comm_size(MPI_COMM_WORLD, &comm_size);
