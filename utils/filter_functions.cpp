@@ -112,10 +112,8 @@ void apply_averaging_filter_no_window(const std::string& filename){
 
     cv::Mat mask = cv::Mat::ones(3, 3, CV_32F) / 9.0;
 
-    // Create output image
     cv::Mat img_new(m, n, CV_8UC1);
 
-    // Convolve the mask over the image
     for (int i = 1; i < m - 1; i++) {
         for (int j = 1; j < n - 1; j++) {
             float temp = 0.0;
@@ -127,4 +125,42 @@ void apply_averaging_filter_no_window(const std::string& filename){
             img_new.at<uchar>(i, j) = cv::saturate_cast<uchar>(temp);
         }
     }
+}
+
+void apply_averaging_filter_with_range_no_window(const std::string& filename, int start_row, int end_row, int num_channels) {
+    cv::Mat image = cv::imread(filename, num_channels == 1 ? cv::IMREAD_GRAYSCALE : cv::IMREAD_COLOR);
+
+    if (!image.data) {
+        std::cout << "Error loading image!" << std::endl;
+        return;
+    }
+
+    int m = image.rows;
+    int n = image.cols;
+
+    if (start_row < 0 || start_row >= m) {
+        std::cerr << "Invalid start_row: " << start_row << std::endl;
+        return;
+    }
+    if (end_row < 0 || end_row > m) {
+        std::cerr << "Invalid end_row: " << end_row << std::endl;
+        return;
+    }
+
+    cv::Mat mask = cv::Mat::ones(3, 3, CV_32F) / 9.0;
+
+    cv::Mat img_new(m, n, image.type());
+
+    for (int i = std::max(1, start_row); i < std::min(m - 1, end_row); i++) {
+        for (int j = 1; j < n - 1; j++) {
+            float temp = 0.0;
+            for (int ki = -1; ki <= 1; ki++) {
+                for (int kj = -1; kj <= 1; kj++) {
+                    temp += image.at<uchar>(i + ki, j + kj) * mask.at<float>(ki + 1, kj + 1);
+                }
+            }
+            img_new.at<uchar>(i, j) = cv::saturate_cast<uchar>(temp);
+        }
+    }
+
 }

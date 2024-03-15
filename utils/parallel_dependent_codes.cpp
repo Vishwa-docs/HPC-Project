@@ -53,6 +53,8 @@ void images_from_directory_with_filter_dependent_mpi(const std::string& director
             MPI_Abort(MPI_COMM_WORLD, 1);
         }
 
+        MPI_Barrier(MPI_COMM_WORLD);
+
         for (int i = 1; i < comm_size; i++) {
             // FILE DISTRIBUTION ACROSS THREADS
             int num_images = image_paths.size() / (comm_size - 1);

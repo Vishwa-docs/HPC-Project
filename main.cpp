@@ -11,33 +11,47 @@
 #include "utils/display_functions.h"
 #include "utils/serial_codes.h"
 #include "utils/parallel_dependent_codes.h"
+#include "utils/parallel_independent_codes.h"
 
 using namespace std;
 
-void serial_code(const string& image_directory_path, int limit){
+double serial_code(const string& image_directory_path, int limit, void(*filter_function)(const std::string&)){
     auto start = chrono::high_resolution_clock::now();
 
-    images_from_directory_with_filter(image_directory_path, limit, apply_sobel_filter_no_window);
+    images_from_directory_with_filter(image_directory_path, limit, filter_function);
 
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
 
-    cout << "Execution time: " << duration.count() << " seconds" << endl;
+    return duration.count();
 }
 
-void parallel_dependent_code(const string& image_directory_path, int limit){
+double parallel_dependent_code(const string& image_directory_path, int limit, void(*filter_function)(const std::string&)){
     auto start = chrono::high_resolution_clock::now();
 
-    images_from_directory_with_filter_dependent_mpi(image_directory_path, limit, apply_sobel_filter_no_window);;
+    images_from_directory_with_filter_dependent_mpi(image_directory_path, limit, filter_function);
 
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
 
-    cout << "Execution time Parallel: " << duration.count() << " seconds" << endl;
+    return duration.count();
 }
+
+//double parallel_independent_code(const string& image_directory_path, int limit, void(*filter_function)(const std::string&)){
+//    auto start = chrono::high_resolution_clock::now();
+//
+//    images_from_directory_with_filter_independent_mpi(image_directory_path, limit, filter_function);;
+//
+//    auto end = chrono::high_resolution_clock::now();
+//    auto duration = chrono::duration_cast<chrono::duration<double>>(end - start);
+//
+//    return duration.count();
+//}
 
 
 int main() {
+    double serial_dependent, serial_independent, parallel_dependent, parallel_independent;
+
     string image_path = "/Users/daver/Desktop/HPC_Project/resources/sheep.jpg";
 //    display_image(image_path);
 //    apply_sobel_filter(image_path);
@@ -46,12 +60,23 @@ int main() {
 
 //    display_images_from_directory(image_directory_path, 10);
 
-    serial_code(image_directory_path, 10);
-    parallel_dependent_code(image_directory_path, 10);
+    serial_dependent = serial_code(image_directory_path, 10, apply_sobel_filter_no_window);
+    parallel_dependent = parallel_dependent_code(image_directory_path, 10, apply_sobel_filter_no_window);
+
+    cout << "Execution time for Serial Dependent Filter: " << serial_dependent << " seconds" << endl;
+    cout << "Execution time for Serial Independent Filter: " << parallel_dependent << " seconds" << endl;
+
+    serial_independent = serial_code(image_directory_path, 10, apply_averaging_filter_no_window);
+//    parallel_independent = parallel_independent_code(image_directory_path, 10, reinterpret_cast<void (*)(
+//            const string &)>(apply_averaging_filter_with_range_no_window));
+
+    cout << "Execution time for Serial Independent Filter: " << serial_independent << " seconds" << endl;
+//    cout << "Execution time for Parallel Independent Filter: " << parallel_independent << " seconds" << endl;
+
 
     ////////////////////////////
     // Independent Filters Test
-    apply_averaging_filter_no_window(image_path);
+//    apply_averaging_filter_no_window(image_path);
 
     return 0;
 }
