@@ -80,8 +80,8 @@ void run_independent_filters(){
 
     double serial_independent, parallel_independent;
 
-    serial_independent = serial_code(image_directory_path, 40000, apply_averaging_filter_no_window);
-    parallel_independent = parallel_independent_code(image_directory_path, 40000, reinterpret_cast<void (*)(
+    serial_independent = serial_code(image_directory_path, 10, apply_averaging_filter_no_window);
+    parallel_independent = parallel_independent_code(image_directory_path, 10, reinterpret_cast<void (*)(
             const string &)>(apply_averaging_filter_with_range_no_window));
 
     cout << "Execution time for Serial Independent Filter: " << serial_independent << " seconds" << endl;
