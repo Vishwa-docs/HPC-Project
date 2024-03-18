@@ -12,6 +12,7 @@
 #include "utils/serial_codes.h"
 #include "utils/parallel_dependent_codes.h"
 #include "utils/parallel_independent_codes.h"
+#include "utils/resize.h"
 
 using namespace std;
 
@@ -80,8 +81,8 @@ void run_independent_filters(){
 
     double serial_independent, parallel_independent;
 
-    serial_independent = serial_code(image_directory_path, 40000, apply_averaging_filter_no_window);
-    parallel_independent = parallel_independent_code(image_directory_path, 40000, reinterpret_cast<void (*)(
+    serial_independent = serial_code(image_directory_path, 10, apply_averaging_filter_no_window);
+    parallel_independent = parallel_independent_code(image_directory_path, 10, reinterpret_cast<void (*)(
             const string &)>(apply_averaging_filter_with_range_no_window));
 
     cout << "Execution time for Serial Independent Filter: " << serial_independent << " seconds" << endl;
@@ -89,8 +90,10 @@ void run_independent_filters(){
 }
 
 int main() {
-
-    run_independent_filters();
+    int limit = 10; // Default batch size
+    int imagesPerBatch = 1; // Default batch size
+    changeBatchSize(limit,imagesPerBatch);
+    run_dependent_filters();
 
     return 0;
 }

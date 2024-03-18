@@ -4,6 +4,7 @@
 
 #include "display_functions.h"
 #include "filter_functions.h"
+#include "resize.h"
 
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
@@ -48,3 +49,7 @@ void images_from_directory_with_filter(const std::string& directory, int limit, 
         std::cerr << "Error opening directory: " << directory << std::endl;
     }
 }
+
+
+// Include necessary headers
+
