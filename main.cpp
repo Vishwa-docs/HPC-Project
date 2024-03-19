@@ -63,25 +63,25 @@ void run_single_tests(){
     apply_averaging_filter_no_window(image_path);
 }
 
-void run_dependent_filters(){
+void run_dependent_filters(int limit){
     string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
 
     double serial_dependent, parallel_dependent;
 
-    serial_dependent = serial_code(image_directory_path, 10, apply_sobel_filter_no_window);
-    parallel_dependent = parallel_dependent_code(image_directory_path, 10, apply_sobel_filter_no_window);
+    serial_dependent = serial_code(image_directory_path, limit, apply_sobel_filter_no_window);
+    parallel_dependent = parallel_dependent_code(image_directory_path, limit, apply_sobel_filter_no_window);
 
     cout << "Execution time for Serial Dependent Filter: " << serial_dependent << " seconds" << endl;
     cout << "Execution time for Parallel Independent Filter: " << parallel_dependent << " seconds" << endl;
 }
 
-void run_independent_filters(){
+void run_independent_filters(int limit){
     string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
 
     double serial_independent, parallel_independent;
 
-    serial_independent = serial_code(image_directory_path, 10, apply_averaging_filter_no_window);
-    parallel_independent = parallel_independent_code(image_directory_path, 10, reinterpret_cast<void (*)(
+    serial_independent = serial_code(image_directory_path, limit, apply_averaging_filter_no_window);
+    parallel_independent = parallel_independent_code(image_directory_path, limit, reinterpret_cast<void (*)(
             const string &)>(apply_averaging_filter_with_range_no_window));
 
     cout << "Execution time for Serial Independent Filter: " << serial_independent << " seconds" << endl;
@@ -90,7 +90,7 @@ void run_independent_filters(){
 
 int main() {
 
-    run_independent_filters();
+    run_independent_filters(10);
 
     return 0;
 }
