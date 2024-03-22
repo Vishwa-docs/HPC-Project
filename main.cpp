@@ -15,6 +15,31 @@
 
 using namespace std;
 
+void resize_images_in_dataset(const string& image_directory_path, int new_size) {
+    vector<string> file_names;
+    cv::glob(image_directory_path + "/*.jpg", file_names); // Assuming all images are in JPG format
+
+    for (const string& file_name : file_names) {
+        cv::Mat img = cv::imread(file_name);
+        if (!img.empty()) {
+            cv::resize(img, img, cv::Size(new_size, new_size)); // Resize the image
+            imwrite(file_name, img); // Overwrite the original image with the resized image
+        }
+    }
+
+    // Print the size of the first image for confirmation
+    if (!file_names.empty()) {
+        cv::Mat first_img = cv::imread(file_names[0]);
+        if (!first_img.empty()) {
+            cout << "Size of the first image after resizing: " << first_img.size() << endl;
+        } else {
+            cout << "Failed to read the first image." << endl;
+        }
+    } else {
+        cout << "No images found in the directory." << endl;
+    }
+}
+
 double serial_code(const string& image_directory_path, int limit, void(*filter_function)(const std::string&)){
     auto start = chrono::high_resolution_clock::now();
 
@@ -89,8 +114,9 @@ void run_independent_filters(int limit){
 }
 
 int main() {
-
-    run_independent_filters(10);
+    string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
+    //resize_images_in_dataset(image_directory_path, 128);
+    run_independent_filters(50000);
 
     return 0;
 }
