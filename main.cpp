@@ -116,7 +116,7 @@ void run_independent_filters(int limit){
 int main() {
     string image_directory_path = "/Users/daver/Desktop/HPC_Project/resources/image_dataset";
     //resize_images_in_dataset(image_directory_path, 128);
-    run_independent_filters(10);
+    run_dependent_filters(10);
 
     return 0;
 }
