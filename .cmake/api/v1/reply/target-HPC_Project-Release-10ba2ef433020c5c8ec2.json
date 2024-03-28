@@ -13,15 +13,11 @@
 			"add_executable",
 			"link_directories",
 			"target_link_libraries",
-			"set_property",
-			"_MPI_create_imported_target",
-			"find_package",
 			"include_directories"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt",
-			"/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindMPI.cmake"
+			"CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -47,29 +43,7 @@
 				"parent" : 0
 			},
 			{
-				"command" : 5,
-				"file" : 0,
-				"line" : 6,
-				"parent" : 0
-			},
-			{
-				"file" : 1,
-				"parent" : 4
-			},
-			{
-				"command" : 4,
-				"file" : 1,
-				"line" : 1642,
-				"parent" : 5
-			},
-			{
 				"command" : 3,
-				"file" : 1,
-				"line" : 1230,
-				"parent" : 6
-			},
-			{
-				"command" : 6,
 				"file" : 0,
 				"line" : 9,
 				"parent" : 0
@@ -82,13 +56,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 8,
+					"backtrace" : 4,
 					"isSystem" : true,
 					"path" : "/opt/homebrew/Cellar/opencv/4.9.0_5/include/opencv4"
 				},
@@ -125,7 +99,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -139,6 +113,11 @@
 			},
 			{
 				"fragment" : "-Wl,-rpath,/opt/homebrew/Cellar/opencv/4.9.0_5/include/opencv4 -Wl,-rpath,/opt/homebrew/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib",
 				"role" : "libraries"
 			},
 			{
@@ -314,11 +293,6 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "/opt/homebrew/lib/libopencv_xphoto.4.9.0.dylib",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 7,
-				"fragment" : "/opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib",
 				"role" : "libraries"
 			},
 			{

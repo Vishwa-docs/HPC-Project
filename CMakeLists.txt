@@ -24,5 +24,5 @@ add_executable(HPC_Project main.cpp
         trial.h)
 
 
-target_link_libraries(HPC_Project PRIVATE MPI::MPI_CXX ${OpenCV_LIBS})
+target_link_libraries(HPC_Project PRIVATE MPI::MPI_CXX ${MPI_LIBRARIES} ${OpenCV_LIBS})
 #OpenCV::core OpenCV::imgproc OpenCV::highgui
