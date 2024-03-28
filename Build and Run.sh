@@ -19,10 +19,11 @@ sysctl hw.physicalcpu | awk '{print $NF}'
 # In Program Arguments : -np 4 -wd /Users/daver/Desktop/HPC_Project ./Users/daver/Desktop/HPC_Project/HPC_Project
 
 # Run on Terminal : (Source https://www.youtube.com/watch?v=Ozc3zWJ_NhQ)
-cmake . && make
+make clean
+cmake -B build -DCMAKE_BUILD_TYPE=Debug && make
 #./HPC_Project
 
 # Execution Permissions
-chmod a+x /Users/daver/Desktop/HPC_Project/HPC_Project
+#chmod a+x /Users/daver/Desktop/HPC_Project/HPC_Project
 
-mpirun -np 4 -wd /Users/daver/Desktop/HPC_Project ./Users/daver/Desktop/HPC_Project/HPC_Project
+mpirun -np 4 ./Users/daver/Desktop/HPC_Project/HPC_Project
