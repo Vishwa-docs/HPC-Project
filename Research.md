@@ -12,9 +12,10 @@
    1. Rely on information from neighbouring filters
    2. Eg : Edge Detection, Sharpening
    3. Uses **Task Parallelism**
-   4. Uses **MIMD Architecture**
-      1. Multiple instruction streams: Different processing units can execute different instruction sequences depending on the specific pixel and its neighbors. 
+   4. Uses **SIMD Architecture**
+      1. Single instruction streams : 
       2. Multiple data streams: Each processing unit still operates on its own data (pixels).
+      3. POssible to make it MIMD by modifying the input function
 
 ## Other Requirements
 1. Communication Overhead : Should be minimal for dependent filters
