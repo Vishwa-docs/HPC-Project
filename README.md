@@ -1,5 +1,5 @@
 # Presentation
-![Presentation](https://github.com/Vishwa-docs/HPC-Project/blob/main/Presentation/HPC%20Project%20Presentation.pdf)
+[Presentation](https://github.com/Vishwa-docs/HPC-Project/blob/main/Presentation/HPC%20Project%20Presentation.pdf)
 
 
 # HPC Project
