@@ -1,4 +1,4 @@
-/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/daver/Desktop/HPC_Project -B /Users/daver/Desktop/HPC_Project
+/Users/daver/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/daver/Desktop/HPC-Project -B /Users/daver/Desktop/HPC-Project
 CMake Deprecation Warning:
   Support for "Extra Generators" like
 
@@ -8,6 +8,22 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
--- Configuring done (0.4s)
+-- The C compiler identification is AppleClang 15.0.0.15000309
+-- The CXX compiler identification is AppleClang 15.0.0.15000309
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found MPI_C: /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib (found version "3.1") 
+-- Found MPI_CXX: /opt/homebrew/Cellar/open-mpi/5.0.2/lib/libmpi.dylib (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- Found OpenCV: /opt/homebrew/Cellar/opencv/4.9.0_5 (found version "4.9.0") 
+-- Configuring done (1.6s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/daver/Desktop/HPC_Project
+-- Build files have been written to: /Users/daver/Desktop/HPC-Project
